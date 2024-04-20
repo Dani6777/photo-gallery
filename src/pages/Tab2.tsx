@@ -14,9 +14,6 @@ import { camera, trash, close } from 'ionicons/icons';
 import { usePhotoGallery } from '../hooks/usePhotoGallery';
 
 
-
-
-
 const Tab2: React.FC = () => {
 
   const { photos, takePhoto } = usePhotoGallery();
@@ -25,7 +22,7 @@ const Tab2: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Galeria de Fotos</IonTitle>
+          <IonTitle className="tab-title">Galeria de Fotos</IonTitle>
         </IonToolbar>
       </IonHeader>
 
@@ -39,7 +36,7 @@ const Tab2: React.FC = () => {
 
         </IonHeader>
 
-        <ExploreContainer name="Tab 2 page" />
+        <ExploreContainer name="Foto" />
         <IonGrid>
           <IonRow>
             {photos.map((photo, index) => (
